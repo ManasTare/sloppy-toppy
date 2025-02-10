@@ -1,0 +1,110 @@
+[gd_scene load_steps=14 format=3 uid="uid://cnpcc0uq74ble"]
+
+[ext_resource type="ArrayMesh" uid="uid://cusrt58w5q3an" path="res://assets/Tables/Office_Table_Coffee_01_Black.obj" id="1_mqef1"]
+[ext_resource type="ArrayMesh" uid="uid://ybvw5yvjjc6t" path="res://assets/Chairs/Office_Couch_Black_01.obj" id="2_vsbel"]
+[ext_resource type="ArrayMesh" uid="uid://djfvq2jvxr6nh" path="res://assets/Misc/Office_Misc_Plant_03.obj" id="3_3oyiy"]
+[ext_resource type="ArrayMesh" uid="uid://dgfby367j82lx" path="res://assets/Misc/Trashcans/Office_Misc_Trashcan_Small_01.obj" id="4_y8qhe"]
+[ext_resource type="ArrayMesh" uid="uid://25ka7yy8km3" path="res://assets/Misc/Coffee/Office_Misc_Coffee_Machine_01.obj" id="5_1e45r"]
+[ext_resource type="ArrayMesh" uid="uid://bigoph8hin6fd" path="res://assets/Tables/Office_Table_Brown_1x1_01.obj" id="6_shhkq"]
+[ext_resource type="PackedScene" uid="uid://epwtp4ryxagk" path="res://scenes/player.tscn" id="7_eg8x7"]
+[ext_resource type="ArrayMesh" uid="uid://ds3fykj1tyxpt" path="res://assets/Tables/Office_Table_Brown_3x1_02.obj" id="8_sngit"]
+[ext_resource type="ArrayMesh" uid="uid://dntv16v811uye" path="res://assets/Chairs/Office_Chair_Brown_04.obj" id="9_5w42t"]
+[ext_resource type="ArrayMesh" uid="uid://dnc5ko7vs2u58" path="res://assets/Misc/Electronics/Office_Misc_PC_01.obj" id="10_r1gmq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18465"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_6ige0"]
+sky_material = SubResource("ProceduralSkyMaterial_18465")
+
+[sub_resource type="Environment" id="Environment_of7ot"]
+background_mode = 2
+sky = SubResource("Sky_6ige0")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Reception_Room_A" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_of7ot")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, -1.74846e-07, -7.64274e-15, 0, -4.37114e-08, 1, -1.74846e-07, -1, -4.37114e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.013444, 0)
+use_collision = true
+size = Vector3(15, 0.001, 15)
+
+[node name="OfficeTableCoffee01Black" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.69481, 0, 1.9753)
+mesh = ExtResource("1_mqef1")
+metadata/_edit_group_ = true
+
+[node name="OfficeTableCoffee01Black2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.90897, 0, 4.00602)
+mesh = ExtResource("1_mqef1")
+metadata/_edit_group_ = true
+
+[node name="OfficeCouchBlack01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, 1.89468)
+mesh = ExtResource("2_vsbel")
+
+[node name="OfficeTableCoffee01Black3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.69481, 0, -3.82976)
+mesh = ExtResource("1_mqef1")
+metadata/_edit_group_ = true
+
+[node name="OfficeCouchBlack03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -3.91037)
+mesh = ExtResource("2_vsbel")
+
+[node name="OfficeCouchBlack02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 6.07086)
+mesh = ExtResource("2_vsbel")
+
+[node name="OfficeMiscPlant03" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.29265, 0, 4.73061)
+mesh = ExtResource("3_3oyiy")
+
+[node name="OfficeMiscTrashcanSmall01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.73277, 0, 3.87836)
+mesh = ExtResource("4_y8qhe")
+
+[node name="OfficeMiscCoffeeMachine01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.81167, 1.08696, -0.733826)
+mesh = ExtResource("5_1e45r")
+
+[node name="OfficeTableBrown1x101" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.75975, 0, -0.913139)
+mesh = ExtResource("6_shhkq")
+
+[node name="Player" parent="." instance=ExtResource("7_eg8x7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.13412, 9.78278, 3.43781)
+
+[node name="OfficeTableBrown3x102" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.85926, -0.0129434, -1.07607)
+mesh = ExtResource("8_sngit")
+
+[node name="OfficeChairBrown04" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.63975, 0, -2.54668)
+mesh = ExtResource("9_5w42t")
+
+[node name="OfficeChairBrown05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.63975, 0, 0.512549)
+mesh = ExtResource("9_5w42t")
+
+[node name="OfficeMiscPc01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.81185, 1.09197, 0.350865)
+mesh = ExtResource("10_r1gmq")
+
+[node name="OfficeMiscPc02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.81185, 1.09197, -2.66413)
+mesh = ExtResource("10_r1gmq")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1264, -7.49929)
+use_collision = true
+size = Vector3(15, 4.54199, 0.001)

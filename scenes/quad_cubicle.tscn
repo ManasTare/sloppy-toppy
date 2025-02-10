@@ -1,0 +1,118 @@
+[gd_scene load_steps=14 format=3 uid="uid://3omfkbmgiefv"]
+
+[ext_resource type="ArrayMesh" uid="uid://bavlxk2cq2mje" path="res://assets/Cubicles/Office_Cubicle_Dark_01.obj" id="1_hnm5m"]
+[ext_resource type="ArrayMesh" uid="uid://yxug5ormlr77" path="res://assets/Tables/Office_Table_Brown_2x2_01.obj" id="2_830xw"]
+[ext_resource type="ArrayMesh" uid="uid://dnc5ko7vs2u58" path="res://assets/Misc/Electronics/Office_Misc_PC_01.obj" id="3_6gduk"]
+[ext_resource type="ArrayMesh" uid="uid://bueipbklf0afm" path="res://assets/Misc/Office_Misc_PictureFrame_01.obj" id="4_bs6uj"]
+[ext_resource type="ArrayMesh" uid="uid://8neqf1tjrnev" path="res://assets/Misc/Office_Misc_Wall_Corkboard_02.obj" id="5_bl7kn"]
+[ext_resource type="ArrayMesh" uid="uid://df7hl7iiub7t0" path="res://assets/Misc/Electronics/Office_Misc_Tablet.obj" id="6_7s252"]
+[ext_resource type="ArrayMesh" uid="uid://cv3wxjc6cc7oy" path="res://assets/Misc/Office_Misc_Organizer.obj" id="7_io0go"]
+[ext_resource type="ArrayMesh" uid="uid://7e47gxnlhrqw" path="res://assets/Misc/Office_Misc_Plant_01.obj" id="8_hrewb"]
+[ext_resource type="ArrayMesh" uid="uid://cpn8ek5vexic7" path="res://assets/Misc/Office_Misc_Whiteboard_02.obj" id="9_wtob3"]
+[ext_resource type="ArrayMesh" uid="uid://bh1hci381624c" path="res://assets/Misc/Office_Misc_Wall_Clock_02.obj" id="10_slc13"]
+[ext_resource type="ArrayMesh" uid="uid://cgtn1w6rd4r8w" path="res://assets/Misc/Office_Misc_Wall_Graph.obj" id="11_y1t7l"]
+[ext_resource type="ArrayMesh" uid="uid://fl0ifsumtpht" path="res://assets/Misc/Electronics/Office_Misc_Printer.obj" id="12_dgxao"]
+[ext_resource type="ArrayMesh" uid="uid://cbxb8peckao7g" path="res://assets/Chairs/Office_Chair_Black_02.obj" id="13_gvr35"]
+
+[node name="Quad_Cubicle" type="Node3D"]
+
+[node name="OfficeCubicleDark01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.49108, 0.000240803, -1.5568)
+mesh = ExtResource("1_hnm5m")
+
+[node name="OfficeCubicleDark02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.48338, 0.000240803, 1.63057)
+mesh = ExtResource("1_hnm5m")
+
+[node name="OfficeCubicleDark03" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.66498, 0.000240803, 1.63057)
+mesh = ExtResource("1_hnm5m")
+
+[node name="OfficeCubicleDark04" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.66498, 0.000240803, -1.54986)
+mesh = ExtResource("1_hnm5m")
+
+[node name="OfficeTableBrown2x201" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59152, 0, -1.6635)
+mesh = ExtResource("2_830xw")
+
+[node name="OfficeTableBrown2x202" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.74232, 0, -1.64828)
+mesh = ExtResource("2_830xw")
+
+[node name="OfficeTableBrown2x203" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 1.77082, 0, 1.74158)
+mesh = ExtResource("2_830xw")
+
+[node name="OfficeTableBrown2x204" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -1.58216, 0, 1.72685)
+mesh = ExtResource("2_830xw")
+
+[node name="OfficeMiscPc01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.828112, 1.10918, -1.97835)
+mesh = ExtResource("3_6gduk")
+
+[node name="OfficeMiscPc02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08543, 1.10918, 0.95316)
+mesh = ExtResource("3_6gduk")
+
+[node name="OfficeMiscPc03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.982597, 1.10918, 2.2786)
+mesh = ExtResource("3_6gduk")
+
+[node name="OfficeMiscPc04" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.18035, 1.10918, -0.935907)
+mesh = ExtResource("3_6gduk")
+
+[node name="OfficeMiscPictureFrame01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.767411, 0, 0.641155, 0, 1, 0, -0.641155, 0, -0.767411, 0.977284, 1.10051, -1.04166)
+mesh = ExtResource("4_bs6uj")
+
+[node name="OfficeMiscWallCorkboard02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.511593, 1.04936, -2.20682)
+mesh = ExtResource("5_bl7kn")
+metadata/_edit_group_ = true
+
+[node name="OfficeMiscTablet" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.06107, 1.10882, -2.34276)
+mesh = ExtResource("6_7s252")
+
+[node name="OfficeMiscOrganizer" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.30882, 1.10373, 0.870907)
+mesh = ExtResource("7_io0go")
+
+[node name="OfficeMiscPlant01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.932829, 1.0926, 1.03025)
+mesh = ExtResource("8_hrewb")
+
+[node name="OfficeMiscWhiteboard02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.983406, 0.915407, 1.85268)
+mesh = ExtResource("9_wtob3")
+
+[node name="OfficeMiscWallClock02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991992, 0.126303, 0, -0.126303, 0.991992, -0.904484, 0.7183, 1.2935)
+mesh = ExtResource("10_slc13")
+
+[node name="OfficeMiscWallGraph" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.646167, 0.918979, -1.04355)
+mesh = ExtResource("11_y1t7l")
+
+[node name="OfficeMiscPrinter" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.08133, 1.09916, -0.804212)
+mesh = ExtResource("12_dgxao")
+
+[node name="OfficeChairBlack02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.45775, 0, 0.889081, 0, 1, 0, -0.889081, 0, -0.45775, -2.11638, 0, -2.30786)
+mesh = ExtResource("13_gvr35")
+
+[node name="OfficeChairBlack03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.43621, 0, 2.19191)
+mesh = ExtResource("13_gvr35")
+
+[node name="OfficeChairBlack04" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.357162, 0, -0.934042, 0, 1, 0, 0.934042, 0, 0.357162, 2.38361, 0, 2.43931)
+mesh = ExtResource("13_gvr35")
+
+[node name="OfficeChairBlack05" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 2.39145, 0, -2.21739)
+mesh = ExtResource("13_gvr35")

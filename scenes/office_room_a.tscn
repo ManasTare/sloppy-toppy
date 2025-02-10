@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4llbwceasc8n"]
+
+[ext_resource type="PackedScene" uid="uid://3omfkbmgiefv" path="res://scenes/quad_cubicle.tscn" id="1_mygoe"]
+[ext_resource type="PackedScene" uid="uid://epwtp4ryxagk" path="res://scenes/player.tscn" id="2_0pjwu"]
+
+[node name="Office_Room_A" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87604, 0, 7.70123)
+use_collision = true
+size = Vector3(26.7521, 0.1, 30.4025)
+
+[node name="Quad_Cubicle" parent="." instance=ExtResource("1_mygoe")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.29821, 0, 2.99519)
+
+[node name="Quad_Cubicle2" parent="." instance=ExtResource("1_mygoe")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.29821, 0, 11.9952)
+
+[node name="Quad_Cubicle3" parent="." instance=ExtResource("1_mygoe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2982, 0, 11.9952)
+
+[node name="Quad_Cubicle4" parent="." instance=ExtResource("1_mygoe")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.2982, 0, 2.99519)
+
+[node name="Player" parent="." instance=ExtResource("2_0pjwu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 5)
+visible = false
